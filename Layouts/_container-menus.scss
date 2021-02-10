@@ -1,0 +1,156 @@
+/*CONTAINER*/ 
+
+#main-container {
+    background-color: $colour-background;
+    margin-top: -40px;
+    height: auto;
+    border-radius: 40px 40px 0px 0px;
+    padding-bottom: 50px;
+    position: relative;
+
+    .container--title {
+        font-family: 'Shrikhand';
+        margin-left: 20px;
+        font-size: 1.5em;
+        padding-top: 20px;
+    }
+
+    .heart {
+        font-size: 1.5em;
+        position: absolute;
+        top: 40px;
+        right: 0; 
+        border: none;
+        margin-right: 30px;
+        background-color: $colour-background;
+        @include heart
+    }
+
+    .order-btn__modif {
+        text-align: center;
+    }
+
+    .order-btn:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+
+/*MENUS-RESTAURANTS-
+------------------*/
+
+@keyframes box-appear {
+    0% {
+        opacity: 0;
+        margin-top: -100px;
+    }  
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.dish {
+    
+    .dish__title {
+        font-weight: bold;
+        border-bottom: 3px solid $colour-green;
+        width: 50px;
+        margin-left: 20px;
+    }
+}
+
+.menu-type__title {
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 20px 0 5px 0;
+    border-bottom: $colour-green solid 3px;
+    width: 40px;
+    margin-left: 20px;
+    font-weight: normal;
+}
+  
+.menu-block {
+    border-radius: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colour-white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 25px;
+    overflow: hidden;
+    animation: box-appear 2s;
+}
+  
+.menu-block:hover {
+    cursor: pointer;
+}
+  
+.menu-block__dish {
+    flex-grow: 1;
+    width: 5em;
+  
+    h1 {
+      font-size: 17px;
+      font-family: "Roboto";
+      font-weight: 600;
+      color: black;
+      padding-top: 7px;
+      padding-left: 10px;
+      margin: 0;
+      overflow: hidden;
+    }
+  
+    p {
+      padding-left: 10px;
+      margin-top: 7px;
+      margin-bottom: 0px;
+      font-size: 0.9em;
+    }
+} 
+  
+.price {
+    padding-right: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+  
+.box {
+    display: flex;
+    width: 80px;
+    height: 84px;
+    margin-right: -84px;
+    transition: all 1s;
+    background-color: $colour-green;
+}
+  
+.box .check {
+    margin: auto;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: rotate(0deg);
+}
+  
+.fa-check-circle {
+    color: $colour-white;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    transform: rotate(180deg);
+    justify-content: center;
+}
+  
+.menu-block:hover > .box .check {
+    transform: rotate(180deg);
+}
+  
+.menu-block:hover > .box {
+    margin-right: 0;
+    width: 80px;
+    height: 84px;
+    transition-duration: 0.5s;
+}

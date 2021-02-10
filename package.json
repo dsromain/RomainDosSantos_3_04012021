@@ -1,0 +1,22 @@
+{
+  "name": "p3_dos_santos_romain",
+  "version": "1.0.0",
+  "description": "Projet3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsromain/RomainDosSantos_3_04012021.git"
+  },
+  "author": "RDS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsromain/RomainDosSantos_3_04012021/issues"
+  },
+  "homepage": "https://github.com/dsromain/RomainDosSantos_3_04012021#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
+}

@@ -1,0 +1,63 @@
+#footer-content {
+
+    background-color: $colour-footer;
+
+    .footer-logo {
+        font-family: 'Shrikhand';
+        color: $colour-white;
+        font-size: 1.3em;
+        margin-left: 30px;
+    }
+
+    ul  {
+        margin-bottom: 40px;
+        margin-left: -20px;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $colour-white;
+    }
+
+    li {
+        margin: 10px;
+        transition: transform .2s;
+    }
+
+    li:hover {
+        transform: scale(1.03);
+    }
+
+    .fa-utensils {
+        margin-right: 10px;
+    }
+
+    .fa-hands-helping {
+        margin-right: 5px;
+    }
+
+    @media screen and (min-width:600px) and (max-width: 900px) {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        .footer-logo {
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width:901px) and (max-width:2000px) {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        .footer-logo {
+            text-align: center;
+        }
+    }
+}
