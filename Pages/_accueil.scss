@@ -16,7 +16,7 @@
 /*TITRE PRINCIPAL*/
 
 .container-title {
-    height: 280px;
+    height: 320px;
     margin: 0px;
     background-color: $colour-background;
 
@@ -109,6 +109,25 @@
         background-color: rgb(255, 215, 255);
     }
 
+    @media screen and (min-width:0px) and (max-width:500px) {
+        .function__step {
+            height: 70px;
+        }
+
+        .function__step--title {
+            font-size: 1em;
+            margin: 25px 5px;
+        }
+
+        .function__step--icon {
+            margin: 23px 15px;
+        }
+
+        .function__step--number {
+            margin-top: 25px;
+        }
+    }
+
     @media screen and (min-width:600px) and (max-width:900px) {
 
         display: flex;
@@ -144,7 +163,6 @@
         padding-left: 40px;
         padding-right: 40px;
     }
-    
 }
 
 /*RESTAURANTS*/
@@ -217,6 +235,12 @@
         margin-top: -60px;
         font-size: 1.7em;
         @include heart
+    }
+ 
+    @media screen and (min-width:0px) and (max-width:500px) {
+        .restaurants__picture {
+            height: 160px;
+        }
     }
 
     @media screen and (min-width:600px) and (max-width:900px) {

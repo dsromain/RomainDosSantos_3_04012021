@@ -19,7 +19,7 @@
         font-size: 1.5em;
         position: absolute;
         top: 40px;
-        right: 0; 
+        right: 0px; 
         border: none;
         margin-right: 30px;
         background-color: $colour-background;
@@ -34,12 +34,18 @@
         transform: scale(1.05);
         cursor: pointer;
     }
+
+    @media screen and (min-width:0px) and (max-width:500px) {
+        .heart {
+            right: -20px
+        }
+    }
 }
 
 /*MENUS-RESTAURANTS-
 ------------------*/
 
-@keyframes box-appear {
+/*@keyframes box-appear {
     0% {
         opacity: 0;
         margin-top: -100px;
@@ -51,10 +57,9 @@
         opacity: 1;
         margin-top: 0px;
     }
-}
+}*/
 
 .dish {
-    
     .dish__title {
         font-weight: bold;
         border-bottom: 3px solid $colour-green;
@@ -110,6 +115,19 @@
       margin-top: 7px;
       margin-bottom: 0px;
       font-size: 0.9em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width:0px) and (max-width:500px) {
+        h1 {
+            font-size: 1em;
+        }
+
+        p{
+            font-size: 0.9em;
+        }
     }
 } 
   
