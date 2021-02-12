@@ -573,19 +573,33 @@ header .header-picture img {
 
 /*MENUS-RESTAURANTS-
 ------------------*/
-/*@keyframes box-appear {
-    0% {
-        opacity: 0;
-        margin-top: -100px;
-    }  
-    65% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        margin-top: 0px;
-    }
-}*/
+@-webkit-keyframes box-appear {
+  0% {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@keyframes box-appear {
+  0% {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
 .dish .dish__title {
   font-weight: bold;
   border-bottom: 3px solid #99E2D0;
